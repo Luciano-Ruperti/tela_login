@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: url("/assets/imagens/Y-Investments/preto-e-branco/pexels-charlotte-may-5825604.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 400px;
+  max-width: 100%;
+  /* background-color: rgba(91, 51, 236, 0.322); */
+  background-color: rgba(255, 72, 0, 0.459);
+  border-radius: 5%;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.637);
+  padding: 30px 30px;
+  margin: 3rem;
+}
+
+.header {
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 1rem;
+}
+
+input {
+  width: 100%;
+  height: 46px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+}
+
+.form-control {
+  position: relative;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.recover-form-control {
+  position: relative;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.bi-eye-fill,
+.bi-eye-slash-fill {
+  color: #fff;
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  cursor: pointer;
+}
+
+label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  transform: translateY(18px);
+  transition: 0.3s ease-in-out;
+}
+
+input:focus {
+  border-bottom: 2px solid #fff;
+}
+
+input:focus + label {
+  transform: translateY(-14px) scale(0.9);
+  /*color: rgb(151, 4, 4);*/
+  /*font-weight: bold;*/
+}
+
+input:not(:placeholder-shown) + label {
+  transform: translateY(-14px) scale(0.9);
+  /*color: rgb(151, 4, 4);*/
+  /*font-weight: bold;*/
+}
+
+input:not(:placeholder-shown) {
+  border-bottom: 2px solid #fff;
+}
+
+input::placeholder {
+  color: transparent;
+}
+
+button {
+  padding: 15px 50px;
+  margin: 20px;
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: ease-in-out 0.3s;
+}
+
+button:hover {
+  /*background-color: rgba(151, 4, 4, 0.801);*/
+  background-color: rgba(255, 72, 0, 0.877);
+}
+
+.btn {
+  text-align: center;
+}
+
+.links {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  transition: ease-in-out 0.3s;
+}
+
+a:hover {
+  /*color: rgb(151, 4, 4);*/
+  font-weight: bold;
+}
+
+.paragraph {
+  color: #fff;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.link {
+  text-decoration: underline;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Recover</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>Recuperação de senha</h2>
+      </div>
+      <form id="form">
+        <div class="recover-form-control">
+          <input type="email" id="email" placeholder="Digite seu e-mail" />
+          <label id="label-email" for="email">E-mail</label>
+          <p class="paragraph">
+            Enviaremos um link para seu email com as instruções para recuperar
+            sua senha
+          </p>
+        </div>
+
+        <div class="btn">
+          <button type="submit">Enviar</button>
+        </div>
+        <div class="links">
+          <a id="resend-link" href="#"
+            ><p class="paragraph">Não recebeu? Reenviar</p></a
+          >
+          <a href="../../index.html"><p class="paragraph">Voltar</p></a>
+        </div>
+      </form>
+    </div>
+    <script src="../js/pass-recover.js"></script>
+  </body>
+</html>

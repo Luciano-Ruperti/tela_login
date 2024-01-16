@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>Sign Up</h2>
+      </div>
+      <form id="form" type="submit">
+        <div class="form-control">
+          <input
+            type="text"
+            id="username"
+            placeholder="Digite seu nome de usuário"
+            autocomplete="off"
+          />
+          <label id="label-usuario" for="username">Nome de usuário</label>
+        </div>
+
+        <div class="form-control">
+          <input
+            type="email"
+            id="email"
+            placeholder="Digite seu e-mail"
+            autocomplete="off"
+          />
+          <label id="label-email" for="email">E-mail</label>
+        </div>
+
+        <div class="form-control">
+          <input
+            type="password"
+            id="password"
+            placeholder="Digite sua senha"
+            autocomplete="off"
+          />
+          <label id="label-password" for="password">Senha</label>
+          <i class="bi bi-eye-fill"></i>
+        </div>
+
+        <div class="form-control">
+          <input
+            type="password"
+            id="password-confirmation"
+            placeholder="Digite sua senha novamente"
+            autocomplete="off"
+          />
+          <label id="label-password-confirmation" for="password-confirmation"
+            >Confirmação de senha</label
+          >
+          <i class="bi bi-eye-fill" id="conf-eye-icon"></i>
+        </div>
+        <div class="paragraph"></div>
+        <div class="btn">
+          <button type="submit">Enviar</button>
+        </div>
+      </form>
+    </div>
+    <script src="../js/signup.js"></script>
+  </body>
+</html>
